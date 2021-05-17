@@ -29,6 +29,13 @@ public class MoviesListController {
 	private String profileName;
 	
 	
+	@GetMapping("")
+	//@RequestMapping(method=RequestMethod.GET, value="/list")
+	public String getMainTemplate(Model model) {		
+		return "main";
+	}
+	
+	
 	@GetMapping("/profile")
 	public String getConfig(Model profileModel) {
 		
